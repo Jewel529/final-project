@@ -17,6 +17,7 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true,
 });
 
+
 async function run() {
   try {
     await client.connect();
@@ -170,4 +171,5 @@ app.get("/", (req, res) => {
 
 app.listen(port, () => {
   console.log(`server running in `, port);
-});
+})
+  ;
